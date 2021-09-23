@@ -23,7 +23,7 @@ jobs:
           context: .
           file: Dockerfile.base
           push: false
-          load: false
+          load: true
           tags: |
             malthe-prod-base
 
@@ -39,6 +39,6 @@ jobs:
           context: .
           file: Dockerfile.prod
           push: false
-          load: false
+          load: true
           tags: |
             malthe-prod
