@@ -1,0 +1,5 @@
+FROM malthe-prod-base:latest as base
+FROM busybox:latest
+COPY --from=base ./hello.txt .
+
+CMD cat hello.txt
